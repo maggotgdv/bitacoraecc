@@ -11,7 +11,10 @@ class DatabaseSeeder extends Seeder {
 	{
 		Eloquent::unguard();
 
-		// $this->call('UserTableSeeder');
+		//Usuario
+		DB::table('categorias')->insert(array('nomusu'=>'Ernesto', 'apllusu'=>'Calderon', 'tipousu'=>1,'carrusu'=> 'Ingenieria de Software', 'aptousu'=>true,'matusu'=>'2010200521'));
+		DB::table('categorias')->insert(array('nomusu'=>'Juan', 'apllusu'=>'Tragocamote', 'tipousu'=>1,'carrusu'=> 'Medicina', 'aptousu'=>false,'matusu'=>'2012224589'));
+		
 	}
 
 }

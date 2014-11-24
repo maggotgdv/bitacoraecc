@@ -18,9 +18,9 @@ class Basededatos extends Migration {
 		    $table->string('nomusu',45);
 		    $table->string('apllusu',45);
 		    $table->unsignedInteger('tipousu');
-		    $table->string('carrusu',45);
-		    $table->boolean('aptousu',45);
-			$table->integer('matusu');
+		    $table->string('carrusu',50);
+		    $table->boolean('aptousu');
+			$table->char('matusu',10)->unique();
 		});
 
 		Schema::create('T002ACTIVIDAD', function($table)
