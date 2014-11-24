@@ -34,13 +34,28 @@ class LoginController extends \BaseController {
 		$usuario = Input::get("Login_txtuser");
 
 		$iniciarsesion = Usuario::select("nomusu", "apllusu", "aptousu")->where("matusu","=",$usuario)->first();
-		if($iniciarsesion->aptousu==false || !$iniciarsesion){
+		/*if($iniciarsesion->aptousu==false || !$iniciarsesion){
 			//return View::make('errors.error_203',['cuerpo'=>'usuario o contraseña incorrectos']);
 			return Redirect::to("/");
 		}
+
 		else{
 			Session::put("matricula", $iniciarsesion->matusu);
 			return Redirect::to("/principal");
+		}*/
+		if($iniciarsesion)
+		{
+		 if($iniciarsesion->aptousu == true){
+				Session::put("matricula", $iniciarsesion->matusu);
+				return Redirect::to('/principal');
+		 }
+		 else{
+		  	return Redirect::to('/');
+		 }
+		}
+
+		else{
+		 return Redirect::to('/');
 		}
 
 	}

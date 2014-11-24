@@ -22,7 +22,7 @@
         </tr>
         <tr>
           <td width="258" height="33"><div align="center"><font face="Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana, sans-serif" color="#FFFFFF" size="+1">Número de Matrícula</font></div></td>
-          <td width="259"><input name="textfield" type="text" id="textfield" size="37" class="textbox"></td>
+          <td width="259"><input name="Login_txtuser" type="text" id="Login_txtuser" size="37" class="textbox"></td>
         </tr>
         <tr>
           <td height="72" colspan="2" align="center"><p>&nbsp;</p>
