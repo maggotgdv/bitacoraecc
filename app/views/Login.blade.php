@@ -8,7 +8,7 @@
     <body class="page-bg page-loaded">
     <form method="post" action="/validar">
     <br>
-    <br>
+    <br> <br> <br> <br>
     <table width="524" height="192" border="0" align="center">
       <tbody>
         <tr>
