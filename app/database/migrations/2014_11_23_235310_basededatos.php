@@ -14,30 +14,30 @@ class Basededatos extends Migration {
 	{
 		Schema::create('T001USUARIO', function($table)
 		{
-			$table->incremental('id');
+			$table->increments('id');
 		    $table->string('nomusu',45);
 		    $table->string('apllusu',45);
 		    $table->unsignedInteger('tipousu');
-		    $table->string('carrusu',45)	
-		    $table->boolean('aptousu',45)
+		    $table->string('carrusu',45);
+		    $table->boolean('aptousu',45);
 			$table->integer('matusu');
 		});
 
 		Schema::create('T002ACTIVIDAD', function($table)
 		{
-			$table->incremental('id');
+			$table->increments('id');
 		    $table->string('nomact',45);
 		    $table->date('fechact',45);
 		    $table->integer('costoact');
-		    $table->string('descact',45)	
-		    $table->string('evidenact',200)
+		    $table->string('descact',45);	
+		    $table->string('evidenact',200);
 			$table->boolean('programact');
 			$table->string('respact',45);
 		});
 
 		Schema::create('T003BITACORA', function($table)
 		{
-			$table->incremental('id');
+			$table->increments('id');
 		  	$table->unsignedInteger('codact');
      			$table->foreign('codact')->references('id')->on('T002ACTIVIDAD');
 		  	$table->unsignedInteger('codusu');
@@ -46,7 +46,7 @@ class Basededatos extends Migration {
 
 		Schema::create('T004USUARIO_ADMIN', function($table)
 		{
-			$table->incremental('id');
+			$table->increments('id');
 		    $table->string('user',45);
 		    $table->string('passw',45);
 		    $table->string('nomusu',45);
