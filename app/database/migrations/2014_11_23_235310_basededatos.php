@@ -67,6 +67,7 @@ class Basededatos extends Migration {
 		Schema::drop('T002ACTIVIDAD');
 		Schema::drop('T003BITACORA');
 		Schema::drop('T004USUARIO_ADMIN');
+		
 	}
 
 }
