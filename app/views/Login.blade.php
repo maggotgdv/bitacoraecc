@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>BP_Login</title>
-{{  HTML::style('CSS/a.css')  }}
+{{  HTML::style('css/a.css')  }}
 </head>
     <body class="page-bg page-loaded">
     <form method="post" action="/validar">
