@@ -47,6 +47,7 @@ class LoginController extends \BaseController {
 		{
 		 if($iniciarsesion->aptousu == true){
 				Session::put("matricula", $iniciarsesion->matusu);
+				Session::put("logeado", true);
 				return Redirect::to('/principal');
 		 }
 		 else{
