@@ -36,8 +36,7 @@ class AltadeActController extends BaseController
 	      $actividad->save();
 
 
-	   return Redirect::to('dardealta/index')
-	    ->with('mesage','dado de alta');
+	   return Redirect::to('http://www.bitacora.naposac.com/subir/'.$file);
 	  }
 	  return Redirect::to('dardealta/index')
 	   ->with('mesage','algo esta mal')
