@@ -13,9 +13,9 @@ class AltadeActController extends BaseController
 	}
 
 	public function postCreate()
- 	{
-	  $destinationPath = public_path().'/img/';
-	  $filename = '';
+	 {
+	  $destinationPath = 'public/img/';
+	  $filename        = '';
 	  $validator = Validator::make(Input::all(), Actividad::$rules);
 	  if($validator->passes())
 	  {
@@ -29,21 +29,22 @@ class AltadeActController extends BaseController
 	   if (Input::hasFile('evidenact')) 
 	   {
 	          $file            = Input::file('evidenact');
-	          $filename        = md5(date('Y-m-d-h-i-s').'-'. $file->getClientOriginalName());
+	          $filename        = date('Y-m-d-h-i-s').'-'. $file->getClientOriginalName();
 	          $uploadSuccess   = $file->move($destinationPath, $filename);
 	      }
 	      $actividad->evidenact = "img/".$filename;
 	      $actividad->save();
 
 
-	   return Redirect::to('altadeact/index')
+	   return Redirect::to('admin/dardealta/index')
 	    ->with('mesage','dado de alta');
 	  }
-	  return Redirect::to('altadeact/index')
+	  return Redirect::to('admin/dardealta/index')
 	   ->with('mesage','algo esta mal')
 	   ->withErrors($validator)
 	   ->withInput();
+	 }ithInput();
+		}
 	}
-}
 
 ?>
