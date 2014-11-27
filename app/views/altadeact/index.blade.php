@@ -14,7 +14,7 @@
         </tr>
         <tr>
           <td width="258" height="63"><div align="center">Fecha</div></td>
-          <td width="259">{{ Form::date('fechact', 'fecha', ['class'=>'textbox','size'=>'37']); }}</td>
+          <td width="259">{{ Form::text('fechact', 'fecha', ['class'=>'textbox','size'=>'37']); }}</td>
         </tr>
         <tr>
           <td width="258" height="64"><div align="center">Costo</div></td>
