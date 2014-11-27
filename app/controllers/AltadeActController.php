@@ -36,10 +36,10 @@ class AltadeActController extends BaseController
 	      $actividad->save();
 
 
-	   return Redirect::to('admin/dardealta/index')
+	   return Redirect::to('dardealta/index')
 	    ->with('mesage','dado de alta');
 	  }
-	  return Redirect::to('admin/dardealta/index')
+	  return Redirect::to('dardealta/index')
 	   ->with('mesage','algo esta mal')
 	   ->withErrors($validator)
 	   ->withInput();
