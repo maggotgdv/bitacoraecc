@@ -2,10 +2,12 @@
 @section("contenido")
  <div align="center"><font face="Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana, sans-serif" color="#FFFFFF" size="+2">
     Nombre: </font>
-    <input type="text" size="35" class="textbox"> 
+    {{Form::open(array('url'=>'actividad/search', 'files'=>true))}}
+    {{ Form::text('Buscar', 'Buscar', ['class'=>'textbox','size'=>'35']) }}
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-    <input type="submit" size="20" value="Buscar" class="button">
+    {{Form::submit('Buscar', array('class'=>'button','size'=>'20'))}}
+    {{Form::close()}}
     </div>
     <br><br><br>
     <font face="Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana, sans-serif" color="#FFFFFF" size="+1">
