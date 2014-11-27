@@ -15,7 +15,7 @@
    <li class='active'><a href='#'>Bitacoraecc</a></li>
    <li><a href='http://bitacoraecc.herokuapp.com/dardealta/index'>Dar de alta</a></li>
    <li><a href='http://bitacoraecc.herokuapp.com/actividad/index'>Actividades</a></li>
-   <li><a href='#'>Salir</a></li>
+   <li><a href='http://bitacoraecc.herokuapp.com/logout/index'>Salir</a></li>
 
 </ul>
 </div>

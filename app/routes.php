@@ -20,3 +20,4 @@ Route::get('/', 'LoginController@index');
 Route::post('/validar', 'LoginController@store');
 Route::controller('/dardealta','AltadeActController');
 Route::controller('/actividad','ActividadesController');
+Route::controller('/logout','logoutController');
