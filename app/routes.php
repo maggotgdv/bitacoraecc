@@ -18,3 +18,4 @@
 
 Route::get('/', 'LoginController@index');
 Route::post('/validar', 'LoginController@store');
+Route::controller('/dardealta','AltadeActController');

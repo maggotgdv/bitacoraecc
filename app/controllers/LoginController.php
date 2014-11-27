@@ -48,7 +48,7 @@ class LoginController extends \BaseController {
 		 if($iniciarsesion->aptousu == true){
 				Session::put("matricula", $iniciarsesion->matusu);
 				Session::put("logeado", true);
-				return Redirect::to('/principal');
+				return Redirect::to('/dardealta/index');
 		 }
 		 else{
 		  	return Redirect::to('/');
@@ -58,6 +58,12 @@ class LoginController extends \BaseController {
 		else{
 		 return Redirect::to('/');
 		}
+
+		/*@if(Session::has('success'))
+		<div class="alert-box success">
+		    <h2>{{ Session::get('success') }}</h2>
+		</div>
+		@endif*/
 
 	}
 
