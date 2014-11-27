@@ -44,7 +44,7 @@ class AltadeActController extends BaseController
 	   ->withErrors($validator)
 	   ->withInput();
 	 }
-		}
+		
 	}
 
 ?>
