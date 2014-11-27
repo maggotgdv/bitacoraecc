@@ -1,3 +1,5 @@
+ @extends("layout.index")
+@section("contenido")
  <div align="center"><font face="Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana, sans-serif" color="#FFFFFF" size="+2">
     Nombre: </font>
     <input type="text" size="35" class="textbox"> 
@@ -20,15 +22,16 @@
     </tr>
     @foreach ($actividades as $actividad)  
     <tr>
-      <td>$actividad->nomact</td>
-      <td>$actividad->fechact</td>
-      <td>$actividad->costoact</td>
-      <td>$actividad->descact</td>
-      <td>{{HTML::image($actividad->evidenact,$actividad->nomact)}}</td>
-      <td>$actividad->programact</td>
-      <td>$actividad->respact</td>
+      <td>{{$actividad->nomact}}</td>
+      <td>{{$actividad->fechact}}</td>
+      <td>{{$actividad->costoact}}</td>
+      <td>{{$actividad->descact}}</td>
+      <td>{{HTML::image($actividad->evidenact,$actividad->nomact, array('height'=>'100'))}}</td>
+      <td>{{$actividad->programact}}</td>
+      <td>{{$actividad->respact}}</td>
     </tr>
     @endforeach
   </tbody>
 </table>
 </font>
+@stop

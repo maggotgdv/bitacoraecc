@@ -13,8 +13,8 @@
     <div id='cssmenu'>
 <ul>
    <li class='active'><a href='#'>Bitacoraecc</a></li>
-   <li><a href='#'>Dar de alta</a></li>
-   <li><a href='#'>Actividades</a></li>
+   <li><a href='http://bitacoraecc.herokuapp.com/dardealta/index'>Dar de alta</a></li>
+   <li><a href='http://bitacoraecc.herokuapp.com/actividad/index'>Actividades</a></li>
    <li><a href='#'>Salir</a></li>
 
 </ul>
