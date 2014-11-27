@@ -9,7 +9,14 @@ class AltadeActController extends BaseController
 
 	public function getIndex() 
 	{
+		if(Session::get('logeado')==1)
+		{
 		 return View::make('altadeact.index');
+		}
+		else
+		{
+			return Redirect::to('http://bitacoraecc.herokuapp.com/');
+		}
 	}
 
 	public function postCreate()
