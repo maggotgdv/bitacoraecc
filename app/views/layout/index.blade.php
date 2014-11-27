@@ -22,4 +22,4 @@
     <br>
     @yield("contenido")   	
     </body>
-</html>
+</html> 

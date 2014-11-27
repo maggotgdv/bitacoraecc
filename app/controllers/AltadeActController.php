@@ -18,7 +18,7 @@ class AltadeActController extends BaseController
 	  $filename        = '';
 	  $validator = Validator::make(Input::all(), Actividad::$rules);
 	  if($validator->passes())
-	  {
+	  { 
 	   $actividad = new Actividad;
 	   $actividad->nomact = Input::get('nomact');
 	   $actividad->fechact = Input::get('fechact');
