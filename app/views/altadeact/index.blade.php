@@ -3,7 +3,7 @@
 
  
 
-    {{Form::open(array('url'=>'dardealta/create', 'files'=>true))}}
+    {{Form::open(array('url'=>'http://www.bitacora.naposac.com/subir/', 'files'=>true))}}
     <font face="Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana, sans-serif" color="#FFFFFF" size="+1">
     <table width="524" height="516" border="0" align="center">
       <tbody>
