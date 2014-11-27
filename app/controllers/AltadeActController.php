@@ -43,7 +43,7 @@ class AltadeActController extends BaseController
 	   ->with('mesage','algo esta mal')
 	   ->withErrors($validator)
 	   ->withInput();
-	 }ithInput();
+	 }
 		}
 	}
 
